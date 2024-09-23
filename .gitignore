@@ -1,0 +1,4 @@
+bin/
+isodir/
+obj/
+.ccls-cache
