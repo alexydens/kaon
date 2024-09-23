@@ -1,4 +1,4 @@
-# Kaon ($K^+$$)
+# Kaon ($K^+$)
 ## Name
 Kaons are strange particles. KN could can also stand for kernel (or knitting i
 guess).
