@@ -27,4 +27,13 @@ extern u32 _init_PD;
 #define _INIT_PT0                   (&_init_PT0)
 extern u32 _init_PT0;
 
+/* Generic GDT segment selector */
+#define GDT_SEGMENT_SELECTOR(segment, dpl) ((segment) << 3 | (dpl))
+
+/* Selectors for segments */
+#define GDT_SEGMENT_CODE     GDT_SEGMENT_SELECTOR(1, 0)
+#define GDT_SEGMENT_DATA     GDT_SEGMENT_SELECTOR(2, 0)
+#define GDT_SEGMENT_USERCODE GDT_SEGMENT_SELECTOR(3, 3)
+#define GDT_SEGMENT_USERDATA GDT_SEGMENT_SELECTOR(4, 3)
+
 #endif /* _CONF_H */

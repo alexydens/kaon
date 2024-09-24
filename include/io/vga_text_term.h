@@ -2,6 +2,8 @@
 #ifndef _VGA_TEXT_TERM_H
 #define _VGA_TEXT_TERM_H
 
+/* VGA text mode 80x25 driver for a basic terminal */
+
 /* Includes */
 #include <types.h>
 #include <utils.h>

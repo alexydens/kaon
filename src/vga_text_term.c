@@ -1,4 +1,4 @@
-/* Implements vga_text_term.h */
+/* Implements io/vga_text_term.h */
 #include <io/vga_text_term.h>
 
 /* Global variables */
