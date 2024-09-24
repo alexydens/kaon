@@ -4,9 +4,6 @@
 
 /* This contains some utility macros */
 
-/* Includes */
-#include "types.h"
-
 /* Macro to return the number of elements in an array */
 #define ARRAY_SIZE(array)      (sizeof(array) / sizeof(array[0]))
 

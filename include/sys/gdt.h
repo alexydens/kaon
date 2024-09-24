@@ -40,12 +40,6 @@
 /* Macros */
 #define GDT_SEGMENT_SELECTOR(segment, dpl) ((segment) << 3 | (dpl))
 
-/* More consts - selectors for segments */
-#define GDT_SEGMENT_CODE     GDT_SEGMENT_SELECTOR(1, 0)
-#define GDT_SEGMENT_DATA     GDT_SEGMENT_SELECTOR(2, 0)
-#define GDT_SEGMENT_USERCODE GDT_SEGMENT_SELECTOR(3, 3)
-#define GDT_SEGMENT_USERDATA GDT_SEGMENT_SELECTOR(4, 3)
-
 /* GDT Descriptor */
 typedef struct {
   u16 limit;
