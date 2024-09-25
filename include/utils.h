@@ -12,13 +12,13 @@
 /* Hex string from an 8 bit number */
 static inline void hex_str_8(u8 num, char *str) {
   for (int i = 0; i < 2; i++) {
-    str[7 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
+    str[1 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
   }
 }
 /* Hex string from a 16 bit number */
 static inline void hex_str_16(u16 num, char *str) {
   for (int i = 0; i < 4; i++) {
-    str[7 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
+    str[3 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
   }
 }
 /* Hex string from a 32 bit number */
@@ -30,7 +30,7 @@ static inline void hex_str_32(u32 num, char *str) {
 /* Hex string from a 64 bit number */
 static inline void hex_str_64(u64 num, char *str) {
   for (int i = 0; i < 16; i++) {
-    str[7 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
+    str[15 - i] = HEX_CHAR((num >> (i * 4)) & 0xF);
   }
 }
 
