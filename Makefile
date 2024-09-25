@@ -7,30 +7,30 @@ OBJ_DIR=obj
 # Include files
 INC_DIR=include
 # Cross compiler and tools
-CROSS_DIR=../toolchain/build-i686-elf
+# CROSS_DIR=../toolchain/build-i686-elf
 
 # GNU Compiler Collection (C compiler)
-CC=$(CROSS_DIR)/bin/i686-elf-gcc
+CC=i686-elf-gcc # Cross compiler is accesible through a command on all *nix systems
 # C PreProcessor
-CPP=$(CROSS_DIR)/bin/i686-elf-cpp
+CPP=i686-elf-cpp
 # C++ Compiler
-CXX=$(CROSS_DIR)/bin/i686-elf-g++
+CXX=i686-elf-g++
 # Assembler
-AS=$(CROSS_DIR)/bin/i686-elf-as
+AS=i686-elf-as
 # Linker
-LD=$(CROSS_DIR)/bin/i686-elf-ld
+LD=i686-elf-ld
 # Archiver
-AR=$(CROSS_DIR)/bin/i686-elf-ar
+AR=i686-elf-ar
 # Strip (remove info from obj file)
-STRIP=$(CROSS_DIR)/bin/i686-elf-strip
+STRIP=i686-elf-strip
 # Objcopy (copy obj files, translate obj files)
-OBJCOPY=$(CROSS_DIR)/bin/i686-elf-objcopy
+OBJCOPY=i686-elf-objcopy
 
 # C Compiler flags
-CFLAGS = -std=c11 -ffreestanding -Wall -Wextra -Wpedantic
+CFLAGS = -std=c11 -ffreestanding -Wall -Wextra -Wpedantic -nostdlib
 CFLAGS += -I$(INC_DIR)
 # C++ Compiler flags
-CXXFLAGS = -std=c++17 -ffreestanding -Wall -Wextra -Wpedantic
+CXXFLAGS = -std=c++17 -ffreestanding -Wall -Wextra -Wpedantic -nostdlib++
 CXXFLAGS += -fno-exceptions -fno-rtti
 CXXFLAGS += -I$(INC_DIR)
 # Linker flags
