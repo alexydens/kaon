@@ -73,7 +73,9 @@ build: $(BIN_DIR)/main.iso
 
 # Test
 test: $(BIN_DIR)/main.iso
-	qemu-system-i386 -cdrom $(BIN_DIR)/main.iso
+	qemu-system-i386 -cdrom $(BIN_DIR)/main.iso -m 128M \
+		-chardev stdio,id=char0,logfile=serial.log,signal=off \
+		-serial chardev:char0
 
 # Clean up
 clean:

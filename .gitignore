@@ -2,3 +2,4 @@ bin/
 isodir/
 obj/
 .ccls-cache
+serial.log

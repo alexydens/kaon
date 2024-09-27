@@ -55,4 +55,10 @@ extern u32 _init_PT0;
 /* Selector of user data segment */
 #define SEG_SELECTOR_USERDATA       GDT_SEGMENT_SELECTOR(4, 3)
 
+/* The start of the memory reserved for the page tables */
+#define PTE_MEM_START               (0xc0400000)
+/* The size of the memory reserved for the page tables */
+#define PTE_MEM_SIZE                (0x400000)
+
+
 #endif /* _CONF_H */
