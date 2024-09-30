@@ -1,4 +1,6 @@
 # Kaon ($K^+$)
+## NOTE: THIS IS THE OLD CODE. THE CURRENT VERSION BEING WORKED ON IS AT:
+- https://github.com/alexydens/kernel
 ## Name
 Kaons are strange particles. KN could can also stand for kernel (or knitting i
 guess).
